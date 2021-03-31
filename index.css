@@ -1,0 +1,72 @@
+
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #AAACB5;
+}
+
+
+ul{
+    float: left;
+    clear: left;
+}
+li{
+    border: solid 1px; 
+    list-style-type: none;
+    display: inline-block;
+ 
+   } 
+
+
+.bookshelf {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border: 10px brown solid;
+  overflow: hidden;
+  background-image: linear-gradient(darken(brown, 32%), darken(brown, 30%) 220px, 
+    lighten(brown, 4%) 220px, lighten(brown, 4%) 222px,
+    brown 222px, brown 228px,
+  darken(brown, 4%) 228px, darken(brown, 4%) 230px);
+  background-size: 10px 230px;
+  box-shadow: 0px 1000px 0px 400px #7A7668;
+}
+
+.book {
+  height: 200px;
+  width: 40px;
+  float: left;
+  color: white;
+  font-size: 0.9em;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  transition: transform 0.4s ease;
+}
+
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+.book-green {
+  background-color: darkgreen;
+  border-left: 2px solid lighten(darkgreen, 4%);
+  border-right: 2px solid darken(darkgreen, 4%);
+}
+
+.book-blue {
+  background-color: darkblue;
+  border-left: 2px solid lighten(darkblue, 4%);
+  border-right: 2px solid darken(darkblue, 4%);
+}
+
+.book-umber {
+  background-color: #54290C;
+  border-left: 2px solid lighten(#54290C, 4%);
+  border-right: 2px solid darken(#54290C, 4%);
+}
+
