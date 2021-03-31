@@ -1,55 +1,25 @@
 
 var books = [{
-   title: "Css",
+   title: "CSS BOOK ",
     author: "John Doe",
-    image: ""
+    
 },    {
-    title: "HTML",
-    author: "Doe",
-    image: ""
+    title: "HTML Book",
+    author: "John Doe",
+   
 },    {
-    title: "Java",
-    author: "John",
-    image: ""
+    title: "Java Book",
+    author: "John Doe",
+   
       },
       {
-    title: "OOP",
-    author: "buthaina",
-    image: ""
-          },
- {
-    title: "Read",
-    author: "buthaina",
-    image: ""         
-              },                    
-      {   
-    title: "Write",
-    author: "buthaina",
-    image: ""
-          },
-          {
-    title: "draw",
-     author: "buthaina",
-     image: ""
-              },
-     {
-    title: "book",
-     author: "buthaina",
-    image: ""
-    },
-    {
-   title: "color",
-    author: "buthaina",
-    image: ""
-    },
-     {
-     title: "code",
-    author: "buthaina",
-     image: ""
-     }                  
+    title: "OOP Book",
+    author: "John Doe",
+    
+          }                 
 ];
 
-for (let i = 0; i < 3; i++) { 
+for (let i = 0; i < books.length; i++) { 
    let item= books[i].title;
 
 var li = document.createElement("li");
@@ -59,20 +29,4 @@ var text = document.createTextNode(item);
   }
 
 
-  for (let i = 3; i < 7; i++) { 
-    let item= books[i].title;
- 
- var li = document.createElement("li");
- var text = document.createTextNode(item);
-  li.appendChild(text);
-  document.getElementById("myUl2").appendChild(li);
-   }
-
-   for (let i = 7; i < 11; i++) { 
-    let item= books[i].title;
- 
- var li = document.createElement("li");
- var text = document.createTextNode(item);
-  li.appendChild(text);
-  document.getElementById("myUl3").appendChild(li);
-   }
+  

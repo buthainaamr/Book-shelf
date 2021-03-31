@@ -10,15 +10,27 @@ body {
 
 
 ul{
-    float: left;
-    clear: left;
+  display: inline-block;
+  list-style-type:none;
+  transform: skew(20deg);
+
 }
 li{
+  
     border: solid 1px; 
-    list-style-type: none;
-    display: inline-block;
- 
+    display:inline-block;
+    background-color: aqua;
+    padding-right: 6px;
+    padding-top: 30px;
+     height: 40px;
+   margin: 2px;
+   margin-top: 40px;
+   font-size: 0.7em;
    } 
+
+   li:hover {
+    transform: scale(1.05);
+  }
 
 
 .bookshelf {
@@ -48,6 +60,15 @@ li{
 }
 
 
+.book-tilted {
+  float: left;
+  width: 74px;
+}
+
+.book-tilted > .book {
+  transform: translateY(-3px) translateX(15px) rotate(9deg) ;
+}
+
 .book:hover {
   transform: scale(1.05);
 }
@@ -70,3 +91,19 @@ li{
   border-right: 2px solid darken(#54290C, 4%);
 }
 
+
+.book h2 {
+  padding: 0;
+  font-size: 1em;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-35px);
+  width: 170px;
+}
+
+.book h3 {
+  padding: 0;
+  font-size: 0.7em;
+  transform-origin: 0 0;
+  transform: rotate(0.25turn) translateY(-15px) translateX(-20px);
+  width: 150px;
+}
